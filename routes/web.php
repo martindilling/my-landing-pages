@@ -11,24 +11,22 @@
 |
 */
 
-Route::domain('dilling.test')->group(function () {
-	Route::get('/', function () {
-		return view('dilling_co.welcome');
-	});
+$ext = app()->isLocal() ? '.test' : '';
+
+Route::domain('dilling.co'.$ext)->group(function () {
+	Route::view('/', 'dilling_co.welcome');
 });
 
-Route::domain('martindilling.test')->group(function () {
-	Route::get('/', function () {
-		return view('martindilling_com.welcome');
-	});
+
+Route::domain('martindilling.com'.$ext)->group(function () {
+	Route::view('/', 'martindilling_com.welcome');
 });
 
-Route::domain('camillagejl.test')->group(function () {
-	Route::get('/', function () {
-		return view('camillagejl_com.welcome');
-	});
+
+Route::domain('camillagejl.com'.$ext)->group(function () {
+	Route::view('/', 'camillagejl_com.welcome');
 });
 
 Route::get('/', function () {
-    return view('welcome');
+    abort(404);
 });
