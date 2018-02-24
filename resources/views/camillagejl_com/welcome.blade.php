@@ -22,8 +22,9 @@ $color = 'pink';
                 listed below.
             @endslot
             @slot('links', [
-                'LinkedIn' => 'https://www.linkedin.com/in/camilla-olsen-48444383/',
+                'LinkedIn' => 'https://www.linkedin.com/in/camilla-olsen-48444383',
                 'Facebook' => 'https://www.facebook.com/CamillaGejlOlsen',
+                'Gallery' => 'http://gallery.camillagejl.com',
             ])
         @endcomponent
     </div>
