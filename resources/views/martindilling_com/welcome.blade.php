@@ -26,6 +26,7 @@ $color = 'indigo';
                 'GitHub' => 'https://github.com/martindilling',
                 'Twitter' => 'https://twitter.com/dillinghansen',
                 'Facebook' => 'https://www.facebook.com/dillinghansen',
+                'Art' => 'https://art.martindilling.com',
             ])
         @endcomponent
     </div>
