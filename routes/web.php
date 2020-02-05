@@ -23,6 +23,11 @@ Route::domain('martindilling.com'.$ext)->group(function () {
 });
 
 
+Route::domain('camilladilling.com'.$ext)->group(function () {
+	Route::view('/', 'camillagejl_com.welcome');
+});
+
+
 Route::domain('camillagejl.com'.$ext)->group(function () {
 	Route::view('/', 'camillagejl_com.welcome');
 });
