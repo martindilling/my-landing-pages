@@ -7,6 +7,8 @@ $color = 'indigo';
 @extends('layouts.master')
 
 @section('title', 'Martin Dilling-Hansen')
+@section('uaid', env('MARTINDILLING_UAID'))
+@section('gtmid', env('MARTINDILLING_GTMID'))
 
 @section('body')
     <div id="app" class="h-screen w-screen flex justify-center items-center border-t-4 border-{{ $color }}-lighter">
