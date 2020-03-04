@@ -37,5 +37,14 @@ $color = $color ?? 'grey';
 				@endforeach
 			</div>
 		@endif
+		@if(isset($projects))
+			<div class="flex flex-wrap items-center justify-center text-xs uppercase mt-2 pt-2 border-t border-indigo-lightest">
+				@foreach($projects as $value => $link)
+					<a href="{{ $link }}" target="_blank" class="no-underline tracking-wide text-grey hover:text-grey-darker font-bold px-3 py-1">
+						{{ $value }}
+					</a>
+				@endforeach
+			</div>
+		@endif
 	</div>
 </div>
